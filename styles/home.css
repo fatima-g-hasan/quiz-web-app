@@ -57,3 +57,16 @@ header svg {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 1rem;
 }
+
+.sec-2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sec-2 div {
+  width: 200px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
