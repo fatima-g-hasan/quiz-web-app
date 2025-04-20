@@ -85,3 +85,7 @@ p {
   color: gray;
   letter-spacing: 2px;
 }
+
+section img {
+  height: 500px;
+}
