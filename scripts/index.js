@@ -31,4 +31,10 @@ loginForm.addEventListener("submit", function (event) {
 
   const email = document.getElementById("login-email").value;
   const password = document.getElementById("login-password").value;
+
+  if (email === adminEmail && password === adminPassword) {
+    localStorage.setItem("loggedInUser", JSON.stringify({ email: email }));
+    window.location.href = "dashboard.html";
+    return;
+  }
 });
