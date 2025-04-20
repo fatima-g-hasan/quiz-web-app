@@ -27,3 +27,21 @@ header h1 {
   padding-left: 30px;
   color: white;
 }
+
+.sec-1 {
+  display: flex;
+  align-items: center;
+  padding-left: 70px;
+  padding-top: 50px;
+}
+
+.sec-1 img {
+  height: 100px;
+}
+
+.sec-1 h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 50px;
+  color: rgb(31 41 55);
+}

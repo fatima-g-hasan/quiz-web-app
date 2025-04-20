@@ -5,10 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Quiz</title>
     <link rel="stylesheet" href="../styles/quiz1.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <h1>QuizCrafters</h1>
     </header>
+
+    <section class="sec-1">
+      <img src="../assets/images/html.png" />
+      <h1>HTML Quiz</h1>
+    </section>
+
+    <section>
+      <form id="quiz-form">
+        <div class="question">
+          <p>1. What does HTML stand for?</p>
+          <label><input type="radio" name="q1" value="a" /> Hyper Text Markup Language</label><br/>
+          <label><input type="radio" name="q1" value="b" /> Home Tool Markup Language</label><br/>
+          <label><input type="radio" name="q1" value="c" /> Hyperlinks and Text Markup Language</label>
+        </div>
+        <div class="question">
+          <p>2. Which tag is used to create a numbered list in HTML?</p>
+          <label><input type="radio" name="q2" value="a" /> &lt;ul&gt;</label><br/>
+          <label><input type="radio" name="q2" value="b" /> &lt;ol&gt;</label><br/>
+          <label><input type="radio" name="q2" value="c" /> &lt;li&gt;</label>
+        </div>
+
+        <div class="question">
+          <p>3. What does the &lt;a&gt; tag in HTML define?</p>
+          <label><input type="radio" name="q3" value="a" /> An anchor (link to another page or section)</label><br/>
+          <label><input type="radio" name="q3" value="b" /> A bold text element</label><br/>
+          <label><input type="radio" name="q3" value="c" /> An image placeholder</label>
+        </div>
+    </section>
   </body>
 </html>
