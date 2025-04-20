@@ -7,7 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #faf9f9;
+  background-color: rgb(250 249 249);
 }
 
 header {
@@ -15,13 +15,13 @@ header {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-weight: 700;
-  color: #6366f1;
+  color: rgb(99 102 241);
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
 h2 {
-  color: #1f2937;
+  color: rgb(31 41 55);
   font-family: national park;
   letter-spacing: -1px;
   font-size: 30px;
@@ -29,7 +29,7 @@ h2 {
 }
 
 h3 {
-  color: #1f2937;
+  color: rgb(31 41 55);
   font-family: "National Park", sans-serif;
   letter-spacing: -1px;
   font-size: 25px;
@@ -61,21 +61,21 @@ section button {
   height: 40px;
   width: 100px;
   font-size: 15px;
-  background-color: #6366f1;
+  background-color: rgb(99 102 241);
   color: white;
   border: none;
   border-radius: 5px;
 }
 
 section button:hover {
-  background-color: #4039be;
+  background-color: rgb(64 57 190);
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: 0.2s ease;
 }
 
 section button:active {
-  background-color: #a19dda;
+  background-color: rgb(161 157 218);
   transition: 0.05s;
 }
 
