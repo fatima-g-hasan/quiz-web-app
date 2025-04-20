@@ -36,6 +36,7 @@ header svg {
 .sec-1 {
   position: relative;
   display: block;
+  margin-bottom: 70px;
 }
 
 .sec-1-img {
@@ -56,4 +57,37 @@ header svg {
     "Lucida Sans", Arial, sans-serif;
   background-color: rgba(0, 0, 0, 0.8);
   padding: 1rem;
+}
+
+.sec-2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sec-2 div {
+  width: 350px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.sec-2 a {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: rgb(31 41 55);
+  cursor: pointer;
+}
+
+.sec-2 a:hover {
+  text-decoration: underline;
+}
+
+.sec-2 h2 {
+  font-family: "National Park", sans-serif;
+  color: rgb(31 41 55);
+  text-align: center;
 }

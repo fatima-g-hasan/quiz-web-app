@@ -22,7 +22,7 @@ header {
 
 h2 {
   color: rgb(31 41 55);
-  font-family: national park;
+  font-family: "National Park", sans-serif;
   letter-spacing: -1px;
   font-size: 30px;
   padding-bottom: 30px;
@@ -84,8 +84,4 @@ p {
   font-family: sans-serif;
   color: gray;
   letter-spacing: 2px;
-}
-
-section img {
-  height: 500px;
 }
