@@ -34,7 +34,20 @@ loginForm.addEventListener("submit", function (event) {
 
   if (email === adminEmail && password === adminPassword) {
     localStorage.setItem("loggedInUser", JSON.stringify({ email: email }));
-    window.location.href = "dashboard.html";
+    window.location.href = "pages/dashboard.html";
     return;
+  }
+
+  const users = JSON.parse(localStorage.getItem("users")) || [];
+
+  const matchedUser = users.find(function (user) {
+    return user.email === email && user.password === password;
+  });
+
+  if (matchedUser) {
+    localStorage.setItem("loggedInUser", JSON.stringify({ email: email }));
+    window.location.href = "/pages/home.html";
+  } else {
+    alert("Invalid email or password");
   }
 });
