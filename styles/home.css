@@ -80,10 +80,12 @@ header svg {
   font-weight: 700;
   color: rgb(31 41 55);
   cursor: pointer;
+  text-decoration: none;
 }
 
 .sec-2 a:hover {
   text-decoration: underline;
+  color: rgb(52, 69, 93);
 }
 
 .sec-2 h2 {
