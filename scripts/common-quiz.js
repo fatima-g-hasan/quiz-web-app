@@ -7,4 +7,12 @@ document.addEventListener("DOMContentLoaded", function () {
     css: ["a", "a", "b", "a", "a"],
     js: ["c", "a", "b", "b", "b"],
   };
+
+  const pageTitle = document.title.toLowerCase();
+  let currentQuiz = "html";
+  if (pageTitle.includes("css")) {
+    currentQuiz = "css";
+  } else if (pageTitle.includes("js")) {
+    currentQuiz = "js";
+  }
 });
