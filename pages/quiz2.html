@@ -4,7 +4,103 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Quiz</title>
-    <link rel="stylesheet" href="../styles/quiz2.css" />
+    <link rel="stylesheet" href="../styles/common-quiz.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>QuizCrafters</h1>
+    </header>
+
+    <section class="sec-1">
+      <img src="../assets/images/css.png" />
+      <h1>CSS Quiz</h1>
+    </section>
+
+    <section class="big-sec">
+      <section class="sec-2">
+        <form id="quiz-form">
+          <div class="question">
+            <p>1. What does CSS stand for?</p>
+            <label
+              ><input type="radio" name="q1" value="a" /> Cascading Style
+              Sheets</label
+            ><br />
+            <label
+              ><input type="radio" name="q1" value="b" /> Computer Style
+              Sheets</label
+            ><br />
+            <label
+              ><input type="radio" name="q1" value="c" /> Creative Style
+              Sheets</label
+            >
+          </div>
+
+          <div class="question">
+            <p>
+              2. Which property is used to change the background color in CSS?
+            </p>
+            <label
+              ><input type="radio" name="q2" value="a" />
+              background-color</label
+            ><br />
+            <label><input type="radio" name="q2" value="b" /> color</label
+            ><br />
+            <label
+              ><input type="radio" name="q2" value="c" />
+              background-image</label
+            >
+          </div>
+
+          <div class="question">
+            <p>3. How do you make a list appear horizontally in CSS?</p>
+            <label
+              ><input type="radio" name="q3" value="a" /> display: block;</label
+            ><br />
+            <label
+              ><input type="radio" name="q3" value="b" /> display:
+              inline;</label
+            ><br />
+            <label
+              ><input type="radio" name="q3" value="c" /> list-style-type:
+              none;</label
+            >
+          </div>
+
+          <div class="question">
+            <p>4. Which CSS property controls the text size?</p>
+            <label><input type="radio" name="q4" value="a" /> font-size</label
+            ><br />
+            <label><input type="radio" name="q4" value="b" /> text-size</label
+            ><br />
+            <label><input type="radio" name="q4" value="c" /> font-style</label
+            ><br />
+          </div>
+
+          <div class="question">
+            <p>5. Which CSS property is used to add space between elements?</p>
+            <label><input type="radio" name="q5" value="a" /> margin</label
+            ><br />
+            <label><input type="radio" name="q5" value="b" /> padding</label
+            ><br />
+            <label><input type="radio" name="q5" value="c" /> border</label
+            ><br />
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
+
+        <p id="score-output"></p>
+      </section>
+
+      <section class="sec-3">
+        <img class="img-1" src="../assets/images/eight.png" />
+        <img class="img-2" src="../assets/images/one.png" />
+        <img class="img-3" src="../assets/images/seven.png" />
+      </section>
+    </section>
+  </body>
 </html>
