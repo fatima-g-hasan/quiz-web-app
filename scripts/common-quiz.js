@@ -15,4 +15,34 @@ document.addEventListener("DOMContentLoaded", function () {
   } else if (pageTitle.includes("js")) {
     currentQuiz = "js";
   }
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    let score = 0;
+    const correctAnswers = answersKey[currentQuiz];
+
+    for (let i = 1; i <= 5; i++) {
+      const selectedOption = document.querySelector(
+        `input[name="q${i}"]:checked`
+      );
+      if (selectedOption && selectedOption.value === correctAnswers[i - 1]) {
+        score++;
+      }
+    }
+
+    scoreDisplay.textContent = `You scored ${score}/5`;
+
+    const user = JSON.parse(localStorage.getItem("currentUser"));
+    if (user) {
+      const allScores = JSON.parse(localStorage.getItem("scores")) || {};
+      if (!allScores[user.email]) {
+        allScores[user.email] = {};
+      }
+
+      allScores[user.email][currentQuiz] = score;
+
+      localStorage.setItem("scores", JSON.stringify(allScores));
+    }
+  });
 });
