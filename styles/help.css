@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  background-color: rgb(250 249 249);
+}
+
 header {
   position: sticky;
   top: 0;
@@ -22,41 +26,23 @@ header h1 {
   color: white;
 }
 
-.admin-h1 {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 70px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: 40px;
-  color: rgb(31 41 55);
+h2 {
+  padding-left: 100px;
+  padding-top: 30px;
+  font-family: sans-serif;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
+ul {
+  padding-left: 100px;
   font-family: "National Park", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  color: rgb(31 41 55);
-}
-
-th,
-td {
-  border: 1px solid rgb(204, 204, 204);
-  padding: 10px;
-  text-align: left;
-}
-
-th {
-  background-color: rgb(244, 244, 244);
+  font-size: 18px;
 }
 
 footer {
   position: fixed;
   bottom: 0;
-  width: 100%;
   z-index: 10;
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;

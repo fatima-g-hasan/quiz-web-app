@@ -85,3 +85,25 @@ p {
   color: gray;
   letter-spacing: 2px;
 }
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  background-color: rgb(99 102 241);
+}
+
+footer a {
+  padding-right: 30px;
+  color: white;
+  font-family: "National Park", sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

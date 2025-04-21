@@ -21,6 +21,7 @@ registerForm.addEventListener("submit", function (event) {
   } else {
     users.push({ email: email, password: password, scores: [] });
     localStorage.setItem("users", JSON.stringify(users));
+    console.log("Users after registration:", users);
     alert("Registration successful! Now log in.");
     registerForm.reset();
   }

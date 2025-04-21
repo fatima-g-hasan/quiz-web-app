@@ -5,7 +5,6 @@
 
 body {
   background-color: rgb(250 249 249);
-  height: 1000px;
 }
 
 header {
@@ -28,11 +27,6 @@ header h1 {
   color: white;
 }
 
-header svg {
-  height: 20px;
-  color: white;
-}
-
 .sec-1 {
   position: relative;
   display: block;
@@ -52,11 +46,12 @@ header svg {
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
-  font-size: 1.75rem;
+  font-size: 28px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   background-color: rgba(0, 0, 0, 0.8);
-  padding: 1rem;
+  padding: 16px;
+  line-height: 40px;
 }
 
 .sec-2 {
@@ -66,7 +61,7 @@ header svg {
 
 .sec-2 div {
   width: 350px;
-  height: 500px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -92,4 +87,30 @@ header svg {
   font-family: "National Park", sans-serif;
   color: rgb(31 41 55);
   text-align: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 70px;
+  box-shadow: 0 -4px 6px -1px rgba(99, 102, 241, 0.1);
+  background-color: white;
+}
+
+footer a {
+  padding-left: 30px;
+  color: rgb(78, 80, 186);
+  font-family: "National Park", sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }

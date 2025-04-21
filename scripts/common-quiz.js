@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     scoreDisplay.textContent = `You scored ${score}/5`;
 
-    const user = JSON.parse(localStorage.getItem("currentUser"));
+    const user = JSON.parse(localStorage.getItem("loggedInUser"));
     if (user) {
       const allScores = JSON.parse(localStorage.getItem("scores")) || {};
       if (!allScores[user.email]) {
