@@ -38,4 +38,30 @@ document.addEventListener("DOMContentLoaded", function () {
   } else {
     jsScore = "-";
   }
+
+  let total = 0;
+  if (typeof htmlScore === "number") {
+    total += htmlScore;
+  } else {
+    total += 0;
+  }
+
+  if (typeof cssScore === "number") {
+    total += cssScore;
+  } else {
+    total += 0;
+  }
+
+  if (typeof jsScore === "number") {
+    total += jsScore;
+  } else {
+    total += 0;
+  }
+
+  let totalScore;
+  if (total > 0) {
+    totalScore = total;
+  } else {
+    totalScore = "-";
+  }
 });
