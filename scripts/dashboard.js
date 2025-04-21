@@ -7,4 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.location.href = "../index.html";
     return;
   }
+
+  const users = JSON.parse(localStorage.getItem("users")) || [];
+  const scores = JSON.parse(localStorage.getItem("scores")) || {};
 });
