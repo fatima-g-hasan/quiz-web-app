@@ -4,8 +4,11 @@
 }
 
 body {
+  position: relative;
   background-color: rgb(250 249 249);
-  height: 1000px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -120,4 +123,29 @@ button:active {
   border-left: solid 3px rgb(99 102 241);
   background-color: white;
   width: 500px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer a {
+  color: rgb(99 102 241);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
