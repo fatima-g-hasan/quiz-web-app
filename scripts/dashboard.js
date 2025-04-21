@@ -13,5 +13,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const tableBody = document.getElementById("table-body");
 
-  users.array.forEach((element) => {});
+  users.forEach(function (user) {
+    const userEmail = user.email;
+    const userScores = scores[userEmail] || {};
+  });
+
+  let htmlScore;
+  if (userScores.html !== undefined) {
+    htmlScore = userScores.html;
+  } else {
+    htmlScore = "-";
+  }
+
+  let cssScore;
+  if (userScores.css !== undefined) {
+    cssScore = userScores.css;
+  } else {
+    cssScore = "-";
+  }
+
+  let jsScore;
+  if (userScores.js !== undefined) {
+    jsScore = userScores.js;
+  } else {
+    jsScore = "-";
+  }
 });
