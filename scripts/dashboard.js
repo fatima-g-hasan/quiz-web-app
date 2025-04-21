@@ -10,4 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const users = JSON.parse(localStorage.getItem("users")) || [];
   const scores = JSON.parse(localStorage.getItem("scores")) || {};
+
+  const tableBody = document.getElementById("table-body");
 });
