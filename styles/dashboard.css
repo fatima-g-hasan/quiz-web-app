@@ -22,3 +22,12 @@ header h1 {
   padding-left: 30px;
   color: white;
 }
+
+.admin-h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 40px;
+  color: rgb(31 41 55);
+}
