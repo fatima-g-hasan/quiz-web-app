@@ -64,4 +64,14 @@ document.addEventListener("DOMContentLoaded", function () {
   } else {
     totalScore = "-";
   }
+
+  const row = document.createElement("tr");
+  row.innerHTML = `
+  <td>${userEmail}<td>
+  <td>${htmlScore}<td>
+  <td>${cssScore}<td>
+  <td>${jsScore}<td>
+  <td>${totalScore}<td>`;
+
+  tableBody.appendChild(row);
 });
