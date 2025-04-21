@@ -12,4 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const scores = JSON.parse(localStorage.getItem("scores")) || {};
 
   const tableBody = document.getElementById("table-body");
+
+  users.array.forEach((element) => {});
 });
