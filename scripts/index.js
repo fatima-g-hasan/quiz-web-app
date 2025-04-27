@@ -47,7 +47,7 @@ loginForm.addEventListener("submit", function (event) {
 
   if (matchedUser) {
     localStorage.setItem("loggedInUser", JSON.stringify({ email: email }));
-    window.location.href = "/pages/home.html";
+    window.location.href = "pages/home.html";
   } else {
     alert("Invalid email or password");
   }
